@@ -32,9 +32,43 @@ fn main() {
     let nome = "Erick";
     let nota = 9.5;
 
-    println!("Nome: {}, Nota: {}", nome, nota);
-    println!("Nome: {nome}, Nota: {nota}");
-    println!("Nota formatada: {:.1}", nota);
-    println!("Debug: {:?}", nome);
-    println!("Largura: [{:>8}]", nome);  // alinhado a direita (< esquerda, ^ centro)
+    //println!("Nome: {}, Nota: {}", nome, nota);
+    //println!("Nome: {nome}, Nota: {nota}");
+    //println!("Nota formatada: {:.1}", nota);
+    //println!("Debug: {:?}", nome);
+    //println!("Largura: [{:>8}]", nome);  // alinhado a direita (< esquerda, ^ centro)
+
+    calc();
+}
+
+
+/// EXERCICIO N. 1
+const L_M: f64 = 18.5;
+const L_N: f64 = 25.0;
+const L_S: f64 = 30.0;
+
+fn calc() {
+    let nome: &str = "Erick";
+    let peso_kg: f64 = 90.0;
+    let altura_cm: f64 = 178.0;
+
+    let altura_m = altura_cm / 100.0;
+    let imc = peso_kg / (altura_m * altura_m);
+    let mut classificacao = "Normal";
+    
+    if imc < L_M {
+        classificacao = "Abaixo do peso";
+    } else if imc < L_N {
+        classificacao = "Peso normal";
+    } else if imc < L_S {
+        classificacao = "Sobrepeso";
+    } else {
+        classificacao = "Obesidade";
+    }
+
+    println!("Nome: {nome}");
+    println!("Peso: {peso_kg:.1} kg");
+    println!("Altura: {altura_m:.2} m");
+    println!("IMC: {imc:.2}");
+    println!("Classificação: {classificacao}");
 }

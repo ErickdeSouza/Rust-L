@@ -8,3 +8,19 @@
 - Ponto flutuante    ->  f32 f64
 - Booleano           ->  bool true ou false
 - Caractere          ->  char (um valor Unicode [4 bytes]
+
+### Operadores aritméticos:
+
+- "+" soma
+- "-" subtração
+- "*" multiplicação
+- "/" divisão
+- "%" resto da divisão
+
+### Comparação e operadores lógicos:
+
+- == != igual, diferente
+- < > <= >= menor, maior, etc.
+- &&   AND lógico
+- ||   OU lógico
+- !    NÃO lógico

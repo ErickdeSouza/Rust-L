@@ -9,7 +9,7 @@
 - Booleano           ->  bool true ou false
 - Caractere          ->  char (um valor Unicode [4 bytes]
 
-### Operadores aritméticos:
+#### Operadores aritméticos:
 
 - "+" soma
 - "-" subtração
@@ -17,7 +17,7 @@
 - "/" divisão
 - "%" resto da divisão
 
-### Comparação e operadores lógicos:
+#### Comparação e operadores lógicos:
 
 - == != igual, diferente
 - < > <= >= menor, maior, etc.

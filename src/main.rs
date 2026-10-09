@@ -6,6 +6,7 @@ fn main() {
     //fluxo();
     //lab();
     //func();
+    //a_string();
 
     println!();
 }
